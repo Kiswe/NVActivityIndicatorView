@@ -29,8 +29,7 @@
 import UIKit
 
 class NVActivityIndicatorAnimationBlank: NVActivityIndicatorAnimationDelegate {
-
-    func setUpAnimation(in _: CALayer, size _: CGSize, color _: UIColor) {
+    func setUpAnimation(in _: CALayer, size _: CGSize, color _: UIColor, strokeWidth _: CGFloat) {
         // Do nothing
     }
 }

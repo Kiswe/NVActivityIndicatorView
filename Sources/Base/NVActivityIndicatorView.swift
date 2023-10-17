@@ -446,6 +446,8 @@ public final class NVActivityIndicatorView: UIView {
     /// Current status of animation, read-only.
     private(set) public var isAnimating: Bool = false
 
+    public var strokeWidth: CGFloat = 2
+
     /**
      Returns an object initialized from data in a given unarchiver.
      self, initialized using the data in decoder.
@@ -553,7 +555,7 @@ public final class NVActivityIndicatorView: UIView {
 
         layer.sublayers = nil
         animationRect.size = CGSize(width: minEdge, height: minEdge)
-        animation.setUpAnimation(in: layer, size: animationRect.size, color: color)
+        animation.setUpAnimation(in: layer, size: animationRect.size, color: color, strokeWidth: strokeWidth)
     }
 }
 #endif
