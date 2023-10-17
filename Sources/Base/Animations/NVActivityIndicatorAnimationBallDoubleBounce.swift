@@ -30,7 +30,7 @@ import UIKit
 
 class NVActivityIndicatorAnimationBallDoubleBounce: NVActivityIndicatorAnimationDelegate {
 
-    func setUpAnimation(in layer: CALayer, size: CGSize, color: UIColor) {
+    func setUpAnimation(in layer: CALayer, size: CGSize, color: UIColor, strokeWidth: CGFloat) {
         for index in (0...1) {
             bouncingBall(in: layer, size: size, color: color, startingAt: CACurrentMediaTime() + Double(index))
         }
